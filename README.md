@@ -21,5 +21,5 @@ To summarize, find the Sharing item in System Preferences and set up Internet Sh
 
 The script takes two parameters, the first is the name of the file where you have a list of MAC addresses stored. The second is an optional parameter, the name of your Wi-Fi adapter. If you do not specify one, the script will default it to en0. For more details on finding your adapter's name, see the gbatemp.net link mentioned above.  
 
-
+Be sure to run the command with 'sudo', or it won't have the necessary permissions to change the MAC address. 
 
