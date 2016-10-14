@@ -24,7 +24,7 @@ http://gbatemp.net/threads/how-to-have-a-homemade-streetpass-relay.352645/#post-
 
 To summarize, find the Sharing item in System Preferences and set up Internet Sharing to share your Ethernet over your Wi-Fi adapter. Set this connection's SSID to be "attwifi"
 
-**If running El Capitan follow these further instructions:**
+**If running Yosemite or newer follow these further instructions:**
 
 1. Open System Preferences > Network
 2. Highlight the interface you want to share your connection FROM and click the gear below the interface list
