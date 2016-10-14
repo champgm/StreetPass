@@ -25,7 +25,7 @@ if [ $# -lt 1 ]
 			echo "Enabling ICS and sleeping for 5 minutes"
 			if [ ! -f /System/Library/LaunchDaemons/com.apple.InternetSharing.plist ]
 			    then
-			        osascript toggleSharing.scpt
+			        sudo networksetup -setnetworkserviceenabled ICS on
 			    else
 			        sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.InternetSharing.plist
 			fi
@@ -42,7 +42,7 @@ if [ $# -lt 1 ]
 			echo "Disabling ICS and sleeping for 10s"
 			if [ ! -f /System/Library/LaunchDaemons/com.apple.InternetSharing.plist ]
 			    then
-			        osascript toggleSharing.scpt
+			        sudo networksetup -setnetworkserviceenabled ICS off
 			    else
 			        sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.InternetSharing.plist
 			fi
